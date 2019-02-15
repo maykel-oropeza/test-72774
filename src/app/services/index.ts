@@ -1,0 +1,1 @@
+export { ShoppingCartService } from './products/shoping-cart.service'

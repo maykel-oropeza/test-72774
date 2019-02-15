@@ -1,0 +1,22 @@
+<nb-flip-card [showToggleButton]="false" [flipped]="flipped">
+  <nb-card-front>
+    <nb-card size="xsmall" [ngClass]="{'not-available': !product.available}">
+      <ngx-product-card-front [product]="product"></ngx-product-card-front>
+      <div *ngIf="product.available" class="icon" (click)="toggleView()">
+        <i class="eva-icon-container" nbTooltip="Añadir al Carrito" nbTooltipPlacement="top">
+          <i [innerHTML]="'plus-outline' | eva: { animationType: 'pulse' }"></i>
+        </i>
+      </div>
+    </nb-card>
+  </nb-card-front>
+  <nb-card-back>
+    <nb-card size="xsmall">
+      <ngx-product-card-back [product]="product"></ngx-product-card-back>
+      <div class="icon" (click)="toggleView()">
+          <i class="eva-icon-container" nbTooltip="Ir al Producto" nbTooltipPlacement="top">
+            <i [innerHTML]="'arrow-circle-left-outline' | eva: { animationType: 'pulse' }"></i>
+          </i>
+      </div>
+    </nb-card>
+  </nb-card-back>
+</nb-flip-card>

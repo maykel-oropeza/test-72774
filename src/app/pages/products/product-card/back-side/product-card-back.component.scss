@@ -1,0 +1,120 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  /deep/ nb-card-header {
+    display: flex;
+    justify-content: space-between;
+
+    .header-container {
+      display: flex;
+      @include nb-rtl(flex-direction, row-reverse);
+    }
+
+    .title {
+      padding-left: 1rem;
+    }
+  }
+
+  /deep/ nb-card-body {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+    .qty-control {
+      display: flex;
+      *:focus {
+        outline: 0;
+      }
+      .input-group{
+        height: 35px;
+        &:focus {
+          outline: 0;
+        }
+      }
+      .input-group-text {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
+
+    .qty-less, .qty-more {
+      padding-top: 0;
+      padding-bottom: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .qty-value {
+      padding-left: 5px;
+      padding-right: 25px;
+    }
+
+    .add-to-cart {
+      margin-top: 10px;
+      button {
+        width: 100%;
+        cursor: pointer;
+      } 
+    }
+
+    .eva-icon-container {
+      fill: nb-theme(card-fg-text);
+      padding: 0;
+      display: inline-block;
+      text-align: center;
+      font-size: 1.25rem;
+      height: 24px;
+      &:focus{
+        border: 0;
+        outline: 0;
+      }
+  
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+
+    .unit-product {
+      color: nb-theme(color-fg-heading);
+      position: absolute;
+      right: 52px;
+      top: 12px;
+      font-size: 0.65rem;
+      z-index: 4;
+    }
+
+    .product-name{
+      text-transform: capitalize;
+    }
+
+    .description {
+      color: nb-theme(color-fg);
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      margin-bottom: 0.9rem;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: textfield;
+      margin: 0;
+    }
+
+    input[type=number]
+    {
+    -moz-appearance: textfield;
+    }
+
+  }
+  
+}

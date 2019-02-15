@@ -1,0 +1,20 @@
+<nb-card-header>
+  <div class="header-container">
+    <div class="icon">
+      <i class="ion-arrow-right-b"></i>
+    </div>
+    <span class="title">{{ product.name }}</span>
+  </div>
+</nb-card-header>
+<nb-card-body>
+  <div class="progress-info">
+    <!--<div class="title">{{ product.name }}</div>-->
+    <div class="value">{{ product.price | currency : 'USD' : 'symbol' : '1.0'  }}</div>
+    <div class="description">
+      <bdi>En Stock : {{ product.quantity }}</bdi>
+    </div>
+    <div class="available">
+      <bdi>{{ product.available ? 'Disponible' : 'En este momento no se esta disponible'  }}</bdi>
+    </div>
+  </div>
+</nb-card-body>

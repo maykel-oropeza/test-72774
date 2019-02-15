@@ -1,0 +1,60 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .nb-arrow-right, .nb-plus-circled, .eva-icon-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include nb-rtl(right, auto);
+    @include nb-rtl(left, 0);
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  ::ng-deep .flipped {
+    .back-container {
+      .nb-arrow-right, eva-icon-container {
+        transform: scaleX(-1);
+      }
+    }
+
+    .front-container {
+      .nb-arrow-right {
+        display: none;
+      }
+    }
+  }
+
+  .icon {
+    position: absolute;
+    padding: 14px;
+    right: 0;
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+    font-size: 1.25rem;
+
+    i:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .eva-icon-container {
+    fill: nb-theme(card-fg-text);
+  }
+
+  .nb-icons .icon {
+    padding: 0.75rem 0;
+    font-size: 1.75rem;
+  }
+
+  .not-available {
+    opacity: 0.6;
+    cursor: not-allowed;
+    &:only(.available) {
+      opacity: 1;
+    }
+  }
+
+}

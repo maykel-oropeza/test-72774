@@ -1,0 +1,117 @@
+@import '../../../@theme/styles/themes';
+@import '~@nebular/bootstrap/styles/hero-buttons';
+
+@include nb-install-component() {
+  nb-card {
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+    overflow: visible;
+
+    $bevel: btn-hero-bevel(nb-theme(card-bg));
+    $shadow: nb-theme(btn-hero-shadow);
+    box-shadow: $bevel, $shadow;
+
+    nb-card-header {
+      padding: 0.6rem 1rem 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+      display: block;
+    }
+    nb-card-body {
+      padding: 0.75rem 1rem 0.4rem;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .wrapper-select {
+    display: flex;
+    width: 100%;
+    line-height: 1.75rem;
+  }
+
+  .icon-container{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1rem;
+    font-size: 1.3rem;
+    border-radius: nb-theme(card-border-radius);
+    transition: width 0.4s ease;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    color: nb-theme(color-white);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+
+    &.primary {
+      @include btn-hero-primary-gradient();
+      @include btn-hero-primary-bevel-glow-shadow();
+    }
+    &.success {
+      @include btn-hero-success-gradient();
+      @include btn-hero-success-bevel-glow-shadow();
+    }
+    &.info {
+      @include btn-hero-info-gradient();
+      @include btn-hero-info-bevel-glow-shadow();
+    }
+    &.warning {
+      @include btn-hero-warning-gradient();
+      @include btn-hero-warning-bevel-glow-shadow();
+    }
+    &.danger {
+      @include btn-hero-danger-gradient();
+      @include btn-hero-danger-bevel-glow-shadow();
+    }
+    &.secondary {
+      @include btn-hero-secondary-bg();
+      @include btn-hero-secondary-bevel-glow-shadow();
+      color: nb-theme(card-fg);
+    }
+  }
+
+  @include nb-for-theme(cosmic) {
+  }
+
+  @include nb-for-theme(corporate) {
+  }
+  
+}
+
+:host ::ng-deep {
+    nb-select {
+      border-radius: 0;
+      width: 85%;
+      display: inline-block;
+    }
+    nb-select [nbButton].btn-xsmall {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+    }
+}
+
+::ng-deep nb-card.select {
+  nb-option {
+    padding: nb-theme(select-option-padding);
+    font-family:  nb-theme(font-secondary);
+    font-size: 0.85rem !important; 
+  }
+  nb-option-group span {
+    padding: 0.5rem !important;
+    font-size: 0.9rem; 
+    font-weight: bold;
+    font-family:  nb-theme(font-secondary);
+  }
+}
