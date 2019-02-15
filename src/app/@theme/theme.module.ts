@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
+
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 
 import {
@@ -50,6 +51,7 @@ import {
   SwitcherComponent,
   ShoppingCartComponent,
   CustomRenderCellTableComponent,
+  CustomRender2CellTableComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   TinyMCEComponent,
@@ -118,6 +120,7 @@ const COMPONENTS = [
   SwitcherComponent,
   ShoppingCartComponent,
   CustomRenderCellTableComponent,
+  CustomRender2CellTableComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
@@ -136,7 +139,8 @@ const COMPONENTS = [
 const ENTRY_COMPONENTS = [
   ThemeSwitcherListComponent,
   ShoppingCartComponent,
-  CustomRenderCellTableComponent
+  CustomRenderCellTableComponent,
+  CustomRender2CellTableComponent
 ];
 
 const PIPES = [
