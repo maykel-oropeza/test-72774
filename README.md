@@ -7,7 +7,7 @@ Esta documentación asume que usted esta familiarizado con npm, JavaScript/TypeS
 
 ## Demo
 
-<a target="_blank" href="https://maykeloropezaglobant.github.io/test-72774/">Live Demo</a>
+<a target="_blank" href="https://maykeloropezaglobant.github.io/test-72774/"  target="_blank">Live Demo</a>
 
 ## Documentation
 
