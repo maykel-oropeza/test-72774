@@ -50,6 +50,7 @@ import {
   SwitcherComponent,
   ShoppingCartComponent,
   CustomRenderCellTableComponent,
+  CustomRender2CellTableComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   TinyMCEComponent,
@@ -118,6 +119,7 @@ const COMPONENTS = [
   SwitcherComponent,
   ShoppingCartComponent,
   CustomRenderCellTableComponent,
+  CustomRender2CellTableComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
@@ -136,7 +138,8 @@ const COMPONENTS = [
 const ENTRY_COMPONENTS = [
   ThemeSwitcherListComponent,
   ShoppingCartComponent,
-  CustomRenderCellTableComponent
+  CustomRenderCellTableComponent,
+  CustomRender2CellTableComponent
 ];
 
 const PIPES = [
