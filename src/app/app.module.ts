@@ -12,8 +12,11 @@ import { CoreModule } from './@core/core.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { StoreModule } from '@ngrx/store'
+import { AppReducers } from './app-reducer-factory'
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ServicesModule } from './services/service.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,9 +26,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     AppRoutingModule,
 
+    StoreModule.forRoot(AppReducers),
     NgbModule.forRoot(),
     ThemeModule.forRoot(),
     CoreModule.forRoot(),
+    ServicesModule
   ],
   bootstrap: [AppComponent],
   providers: [

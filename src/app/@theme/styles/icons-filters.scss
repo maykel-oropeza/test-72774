@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'filters-icons';
+    src:  url('assets/fonts/filters-icons.eot?czbzry');
+    src:  url('assets/fonts/filters-icons.eot?czbzry#iefix') format('embedded-opentype'),
+      url('assets/fonts/filters-icons.ttf?czbzry') format('truetype'),
+      url('assets/fonts/filters-icons.woff?czbzry') format('woff'),
+      url('assets/fonts/filters-icons.svg?czbzry#filters-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  [class^="filter-icon-"], [class*=" filter-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'filters-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .filter-icon-search-2:before {
+    content: "\e90f";
+  }
+  .filter-icon-bags:before {
+    content: "\e910";
+  }
+  .filter-icon-delivery:before {
+    content: "\e911";
+  }
+  .filter-icon-boxes-loaded:before {
+    content: "\e912";
+  }
+  .filter-icon-stock:before {
+    content: "\e913";
+  }
+  .filter-icon-box:before {
+    content: "\e914";
+  }
+  .filter-icon-cart-with-boxes:before {
+    content: "\e915";
+  }
+  .filter-icon-lost:before {
+    content: "\e916";
+  }
+  .filter-icon-boxes:before {
+    content: "\e917";
+  }
+  .filter-icon-box-available:before {
+    content: "\e918";
+  }
+  .filter-icon-filter-product:before {
+    content: "\e919";
+  }
+  .filter-icon-warehouse:before {
+    content: "\e91a";
+  }
+  .filter-icon-arrow-from-bottom:before {
+    content: "\e90d";
+  }
+  .filter-icon-parcel:before {
+    content: "\e91b";
+  }
+  .filter-icon-arrow-from-top:before {
+    content: "\e90e";
+  }
+  .filter-icon-cash-search-left-2:before {
+    content: "\e907";
+  }
+  .filter-icon-cash-search-left:before {
+    content: "\e908";
+  }
+  .filter-icon-cash-search:before {
+    content: "\e909";
+  }
+  .filter-icon-funnel-coin-2:before {
+    content: "\e90a";
+  }
+  .filter-icon-funnel-coin-1:before {
+    content: "\e90b";
+  }
+  .filter-icon-quantity:before {
+    content: "\e90c";
+  }
+  .filter-icon-not-order:before {
+    content: "\e906";
+  }
+  .filter-icon-all:before {
+    content: "\e900";
+  }
+  .filter-icon-all-outline:before {
+    content: "\e901";
+  }
+  .filter-icon-available:before {
+    content: "\e902";
+  }
+  .filter-icon-not-available:before {
+    content: "\e903";
+  }
+  .filter-icon-sort-amount-down:before {
+    content: "\e904";
+  }
+  .filter-icon-sort-amount-up:before {
+    content: "\e905";
+  }
+  

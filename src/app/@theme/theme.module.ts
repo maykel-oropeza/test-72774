@@ -2,6 +2,8 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 
 import {
   NbActionsModule,
@@ -46,6 +48,8 @@ import {
   SearchInputComponent,
   ThemeSettingsComponent,
   SwitcherComponent,
+  ShoppingCartComponent,
+  CustomRenderCellTableComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   TinyMCEComponent,
@@ -59,7 +63,9 @@ import {
   TimingPipe,
   NumberWithCommasPipe,
   EvaIconsPipe,
+  FormatStringPipe
 } from './pipes';
+import { OnlyNumbersDirective } from './directives';
 import {
   OneColumnLayoutComponent,
   SampleLayoutComponent,
@@ -105,11 +111,13 @@ const NB_MODULES = [
   NbSelectModule,
   NbChatModule,
   NbTooltipModule,
-  NbCalendarKitModule,
+  NbCalendarKitModule
 ];
 
 const COMPONENTS = [
   SwitcherComponent,
+  ShoppingCartComponent,
+  CustomRenderCellTableComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
@@ -127,6 +135,8 @@ const COMPONENTS = [
 
 const ENTRY_COMPONENTS = [
   ThemeSwitcherListComponent,
+  ShoppingCartComponent,
+  CustomRenderCellTableComponent
 ];
 
 const PIPES = [
@@ -135,13 +145,18 @@ const PIPES = [
   RoundPipe,
   TimingPipe,
   NumberWithCommasPipe,
+  FormatStringPipe,
   EvaIconsPipe,
+];
+
+const DIRECTIVES = [
+  OnlyNumbersDirective
 ];
 
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: 'default',
     },
     [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME ],
   ).providers,
@@ -156,10 +171,15 @@ const NB_THEME_PROVIDERS = [
   }).providers,
 ];
 
+const OTHER_MODULES = [
+  Ng2SmartTableModule,
+  SweetAlert2Module.forRoot()
+]
+
 @NgModule({
-  imports: [...BASE_MODULES, ...NB_MODULES],
-  exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS, ...PIPES],
-  declarations: [...COMPONENTS, ...PIPES],
+  imports: [...BASE_MODULES, ...NB_MODULES, ...OTHER_MODULES],
+  exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS, ...PIPES, ...DIRECTIVES],
+  declarations: [...COMPONENTS, ...PIPES, ...DIRECTIVES],
   entryComponents: [...ENTRY_COMPONENTS],
 })
 export class ThemeModule {

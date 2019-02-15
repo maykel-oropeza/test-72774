@@ -180,6 +180,10 @@
       };
     }
 
+    .input-group-addon:last-child {
+      border-right: nb-theme(form-control-border-width);
+    }
+
     .dropdown.show .btn.dropdown-toggle {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;

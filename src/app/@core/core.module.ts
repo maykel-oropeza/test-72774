@@ -7,6 +7,7 @@ import { of as observableOf } from 'rxjs';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import {
   AnalyticsService,
+  SearchService,
   LayoutService,
   PlayerService,
   StateService,
@@ -31,6 +32,9 @@ import { StatsProgressBarData } from './data/stats-progress-bar';
 import { VisitorsAnalyticsData } from './data/visitors-analytics';
 import { SecurityCamerasData } from './data/security-cameras';
 
+import { CategoriesService } from './mock/categories.service';
+import { MenuService } from './mock/menu.service';
+import { ProductsService } from './mock/products.service';
 import { UserService } from './mock/users.service';
 import { ElectricityService } from './mock/electricity.service';
 import { SmartTableService } from './mock/smart-table.service';
@@ -71,6 +75,9 @@ const socialLinks = [
 ];
 
 const DATA_SERVICES = [
+  CategoriesService,
+  MenuService,
+  ProductsService,
   { provide: UserData, useClass: UserService },
   { provide: ElectricityData, useClass: ElectricityService },
   { provide: SmartTableData, useClass: SmartTableService },
@@ -138,6 +145,7 @@ export const NB_CORE_PROVIDERS = [
     provide: NbRoleProvider, useClass: NbSimpleRoleProvider,
   },
   AnalyticsService,
+  SearchService,
   LayoutService,
   PlayerService,
   StateService,

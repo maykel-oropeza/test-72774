@@ -5,11 +5,23 @@
     "module": "es2015",
     "baseUrl": "./",
     "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@env/*": [
+        "environments/*"
+      ],
       "@angular/*": [
         "../node_modules/@angular/*"
       ],
       "@nebular/*": [
         "../node_modules/@nebular/*"
+      ],
+      "@core/*": [
+        "./app/@core/*"
+      ],
+      "@theme/*": [
+        "./aap/@theme/*"
       ]
     }
   },

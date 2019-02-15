@@ -88,6 +88,28 @@
     margin-bottom: 0;
   }
 
+  .cartShopping {
+    padding: 0.25rem;
+    display: flex;
+    flex-flow: row;
+    width: max-content;
+    margin-right: 0.625rem;
+    padding-left: 1.2rem;
+    i {
+      font-size: 2rem;
+      width: 2.5rem;
+      transform: translateX(-1px) translateY(1px);
+      display: inline-block;
+    }
+  }
+
+  nb-badge {
+    display: inline-block;
+    min-width: 5px;
+    max-width: 20px;
+    width: max-content;
+  }
+
   @include media-breakpoint-down(xl) {
     ngx-layout-direction-switcher {
       display: none;
@@ -206,7 +228,36 @@
 
   @include media-breakpoint-down(xs) {
     .right /deep/ {
-      display: none;
+      visibility: visible;
     }
   }
+
+  .icon {
+    display: inline-block;
+    width: 4rem;
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+
+    i:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .eva-icon-container {
+    fill: nb-theme(menu-icon-color);
+  }
+
+  .icons {
+    color: nb-theme(menu-icon-color);
+    font-size: 1.7em;
+    padding-top: 0;
+    padding-bottom: 0;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
 }

@@ -98,7 +98,7 @@
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       }
       span {
-        @include nb-ltr(padding-left, 0.25rem);
+        @include nb-ltr(padding-left, 0.50rem);
         @include nb-rtl(padding-right, 0.25rem);
       }
 
@@ -108,24 +108,15 @@
     }
 
     /deep/ nb-menu {
-      & > .menu-items {
-        & > .menu-item:first-child {
-          .menu-title {
-            &::after {
-              content: 'new';
-              color: nb-theme(color-white);
-              margin-left: 1rem;
-              background: nb-theme(color-danger);
-              padding: 0 0.5rem;
-              border-radius: nb-theme(radius);
-              font-size: nb-theme(font-size-sm);
-            }
-          }
-        }
+      .menu-item > .menu-items {
+        padding-right: 0.35rem;
+      }
+      .menu-item > .menu-items ul{
+        padding-right: 0rem;
       }
 
       .nb-e-commerce {
-        font-size: 2rem;
+        font-size: 1.9rem;
       }
     }
 

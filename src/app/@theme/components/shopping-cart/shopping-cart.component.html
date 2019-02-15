@@ -1,0 +1,16 @@
+<nb-card>
+  <nb-card-header>Tus Productos</nb-card-header>
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="source" (edit)="onEdit($event)"
+      (editConfirm)="onEditConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+    <swal #successSwal title="Good!!" text="Carrito Actualizado" type="success" timer="1500">
+    </swal>
+    <swal #updateSwal title="Actualizar" text="¿Quieres actualizar tu carrito?" type="question"
+        [showCancelButton]="true" [focusCancel]="true">
+    </swal>
+    <swal #deleteSwal title="Borrar" text="¿Quieres borrar el producto del carrito?" type="question"
+        [showCancelButton]="true" [focusCancel]="true">
+    </swal>
+  </nb-card-body>
+</nb-card>
