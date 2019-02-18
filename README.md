@@ -13,10 +13,6 @@ Esta documentación asume que usted esta familiarizado con npm, JavaScript/TypeS
 
 El sistema se hizo reutilizando la plantilla de e-commerce y algunos de los componentes de [Nebular](https://akveo.github.io/nebular/docs/components/components-overview) , aquí puedes revisar [Documentacion nebular y artículos útiles](https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit).
 
-## Objetivo Personal
-
-Consistió en reutilizar partes de un sistema ya funcionando para probar que puedo seguir aportando features a dicho proyecto tal cual como lo haría en cualquier team de desarrollo de cualquier empresa, adaptándome a la filosofía de trabajo en equipo, código distribuido, estructuras de codigos definidas y demás puntos importantes en una integración de un nuevo colaborador al(los) proyecto(s) de dicha empresa.
-
 ## Steps
 
 Pasos para ejecutar el proyecto de forma local
