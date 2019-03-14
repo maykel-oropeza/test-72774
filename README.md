@@ -26,7 +26,7 @@ listo, has ejecutado el proyecto!!! al ir al browser se debería ver una interfa
 
 ## Dev Comments
 
-El modulo Products que es donde trabaje la mayor parte del tiempo está hecho con los componentes, validaciones y elementos mas básicos para lograr solucionar algunos de los ítems descritos el los requerimientos. 
+El modulo Products que es donde trabaje la mayor parte del tiempo está hecho con los componentes, validaciones y elementos mas básicos para lograr solucionar algunos de los problemas basicos de un pequeño e-comemrce
 
 En mi opinión sería una etapa muy inicial de un e-commerce que a medida que se establezcan y refinen aun mas los requerimientos ira creciendo en forma y tamaño para ofrecer un mejor flujo de UX.
 
