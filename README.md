@@ -7,7 +7,7 @@ Esta documentación asume que usted esta familiarizado con npm, JavaScript/TypeS
 
 ## Demo
 
-<a target="_blank" href="https://maykeloropezaglobant.github.io/test-72774/"  target="_blank">Live Demo</a>
+<a target="_blank" href="https://maykel-oropeza.github.io/test-72774/"  target="_blank">Live Demo</a>
 
 ## Documentation
 
@@ -17,7 +17,7 @@ El sistema se hizo reutilizando la plantilla de e-commerce y algunos de los comp
 
 Pasos para ejecutar el proyecto de forma local
 
-1) Utilizar git para clonar el repositorio [ <https://github.com/maykeloropezaglobant/test-72774.git> ]
+1) Utilizar git para clonar el repositorio [ <https://github.com/maykel-oropeza/test-72774.git> ]
 2) Descargar las dependencias de NPM: ->  [ **npm install** ]
 3) Para levantar el server localmente run: ->[ **npm start** ] o en su defecto *ng serve* con algún puerto si gusta por ejemplo ->[ **ng serve --port=5000** ] 
  
